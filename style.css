@@ -19,12 +19,12 @@ body {
   background-size: 500px;
   background-position: center center;
   padding: 20px 100px;
-/*  min-width: 800px; */
-  
+  align-items: center;
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 20px 0px rgba(0,0,0,0.5);
-  
   position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
 .paper.heart {
@@ -37,15 +37,20 @@ body {
 
 .paper.image {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .paper.image p {
   font-size: 30px;
+  margin-bottom: 10px; /* Adjusted to reduce gap between lines */
 }
 
 img {
   max-height: 200px;
-  width: 100%;
+  width: 100px;
   user-select: none;
+  margin: auto;
 }
 
 .paper.heart::after {
@@ -65,9 +70,8 @@ img {
 p {
   font-family: 'Zeyada';
   font-size: 50px;
-  color: rgb(0,0,100);
+  color: rgb(255, 1, 1);
   opacity: 0.75;
   user-select: none;
-  
-  // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
+  font-weight: bold;
 }
